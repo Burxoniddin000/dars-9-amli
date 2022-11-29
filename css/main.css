@@ -258,6 +258,10 @@ body {
 }
 
 .shop {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #727272;
   display: none;
 }
 
@@ -390,6 +394,10 @@ body {
   }
   .shop {
     display: block;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #727272;
   }
   .hro__link {
     font-weight: 700;
@@ -412,5 +420,18 @@ body {
   }
   .hro__inner-btm {
     margin-bottom: 8px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .her__img img {
+    display: none;
+  }
+  .hero-bgi {
+    background-image: url(../../img/Group107.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 180px;
+    width: 180px;
+    padding-right: 5px;
   }
 }/*# sourceMappingURL=main.css.map */
