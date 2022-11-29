@@ -63,13 +63,15 @@ body {
 
 .sitx-header__input {
   margin-top: 45px;
-  display: flex;
-  justify-content: space-between;
-  gap: 8px;
   padding: 0 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  display: none;
 }
 
 .sitx-header__your {
+  flex-wrap: nowrap;
   position: relative;
   font-weight: 400;
   font-size: 14px;
@@ -77,10 +79,10 @@ body {
   color: #A5A5A5;
   background: #F8F8F8;
   border-radius: 10px;
-  padding: 0 65px;
+  padding-left: 65px;
   display: inline-block;
   height: 45px;
-  max-width: 500px;
+  width: 100%;
   border: 2px solid transparent;
 }
 
@@ -192,6 +194,22 @@ body {
     gap: 30px;
   }
 }
+@media screen and (max-width: 780px) {
+  .sitx-header__input {
+    display: inline-block;
+    margin-top: 45px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .sitx-header__container {
+    display: none;
+  }
+  .sitx-header__hr {
+    display: none;
+  }
+}
 .hro__container {
   background: linear-gradient(97.77deg, rgba(245, 245, 245, 0.5) -23.46%, rgba(245, 245, 245, 0.5) 107.51%);
   max-width: 1200px;
@@ -218,6 +236,7 @@ body {
 }
 
 .hro__make {
+  max-width: 206px;
   font-weight: 900;
   font-size: 70px;
   line-height: 70px;
@@ -238,6 +257,10 @@ body {
   margin-bottom: 44px;
 }
 
+.shop {
+  display: none;
+}
+
 .hro__link {
   background: #46A358;
   border-radius: 6px;
@@ -256,6 +279,8 @@ body {
   background-size: cover;
   flex-shrink: 0;
   font-size: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .hro__inner-btm {
@@ -273,4 +298,119 @@ body {
 
 .inner-item {
   background: #46A358;
+}
+
+@media screen and (max-width: 1030px) {
+  .hro__container {
+    background: linear-gradient(97.77deg, rgba(245, 245, 245, 0.5) -23.46%, rgba(245, 245, 245, 0.5) 107.51%);
+    max-width: 100%;
+    align-items: normal;
+    margin: 0 20px;
+    margin-top: 12px;
+    padding: 0;
+  }
+  .hro {
+    padding: 0;
+  }
+  .hro__item {
+    padding-left: 25px;
+    padding-top: 30px;
+  }
+  .hro__welcome {
+    font-size: 13px;
+  }
+  .hro__make {
+    font-size: 50px;
+    line-height: 50px;
+    color: #3D3D3D;
+    max-width: 477px;
+  }
+  .hro__taxt {
+    max-width: 450px;
+    font-size: 13px;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+  .her__img img {
+    max-width: 100%;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .hro__inner-btm {
+    margin-bottom: 15px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .her__img img {
+    max-width: 100%;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+@media screen and (max-width: 820px) {
+  .hro__make {
+    font-size: 50px;
+    line-height: 50px;
+    color: #3D3D3D;
+    max-width: 100%;
+  }
+  .her__img img {
+    max-width: 350px;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+@media screen and (max-width: 750px) {
+  .hro__container {
+    background: #CCE6D1;
+    max-width: 100%;
+    border-radius: 35px;
+    height: auto;
+    margin-top: 17px;
+    padding-top: 24px;
+  }
+  .hro__item {
+    padding-left: 23px;
+    padding-top: 0;
+  }
+  .hro__welcome {
+    font-size: 11px;
+    line-height: 16px;
+  }
+  .hro__make {
+    font-size: 24px;
+    line-height: 29px;
+    max-width: 100%;
+  }
+  .hro__taxt {
+    display: none;
+  }
+  .shop {
+    display: block;
+  }
+  .hro__link {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    color: #46A358;
+    background: transparent;
+    border-radius: 0;
+    padding: 0;
+    margin-bottom: 27px;
+  }
+  .her__img img {
+    max-width: 213px;
+    height: 213px;
+    background-size: cover;
+    flex-shrink: 0;
+    font-size: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .hro__inner-btm {
+    margin-bottom: 8px;
+  }
 }/*# sourceMappingURL=main.css.map */

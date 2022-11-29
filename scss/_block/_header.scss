@@ -8,13 +8,15 @@
 
 .sitx-header__input {
     margin-top: 45px;
-    display: flex;
-    justify-content: space-between;
-    gap: 8px;
     padding: 0 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    display: none;
 }
 
 .sitx-header__your {
+    flex-wrap: nowrap;
     position: relative;
     font-weight: 400;
     font-size: 14px;
@@ -22,10 +24,10 @@
     color: #A5A5A5;
     background: #F8F8F8;
     border-radius: 10px;
-    padding: 0 65px;
+    padding-left: 65px;
     display: inline-block;
     height: 45px;
-    max-width: 500px;
+    width: 100%;
     border: 2px solid transparent;
 }
 
@@ -144,4 +146,23 @@
 }
 
 
-@media screen and (max-width:780px) {}
+@media screen and (max-width:780px) {
+    .sitx-header__input {
+
+        display: inline-block;
+        margin-top: 45px;
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+    }
+
+    .sitx-header__container {
+        display: none;
+    }
+
+    .sitx-header__hr {
+        display: none;
+    }
+}
